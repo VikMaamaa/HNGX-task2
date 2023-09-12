@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "372cb210-e73a-4044-b162-a4c26284bbe7",
+		"name": "HGNX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24499938",
+		"_collection_link": "https://lunar-space-994096.postman.co/workspace/My-Workspace~5baaf8f3-8589-4fac-86ec-ab476c753037/collection/24499938-372cb210-e73a-4044-b162-a4c26284bbe7?action=share&source=collection_link&creator=24499938"
+	},
+	"item": [
+		{
+			"name": "Get Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Production}}/api/1",
+					"host": [
+						"{{Production}}"
+					],
+					"path": [
+						"api",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"peter doe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Production}}/api",
+					"host": [
+						"{{Production}}"
+					],
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"john doe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Production}}/api/2",
+					"host": [
+						"{{Production}}"
+					],
+					"path": [
+						"api",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Name",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \" doe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Production}}/api/2",
+					"host": [
+						"{{Production}}"
+					],
+					"path": [
+						"api",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Production",
+			"value": "https://hngx-task-2.onrender.com"
+		}
+	]
+}
